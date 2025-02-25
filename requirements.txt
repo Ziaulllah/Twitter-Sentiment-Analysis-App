@@ -1,13 +1,9 @@
-streamlit as st
-pandas as pd
+streamlit
+pandas
 nltk
 re
 sqlite3
-seaborn as sns
-matplotlib.pyplot as plt
+seaborn
+matplotlib
+scikit-learn
 os
-nltk.sentiment import SentimentIntensityAnalyzer
-sklearn.feature_extraction.text import TfidfVectorizer
-sklearn.model_selection import train_test_split
-sklearn.ensemble import RandomForestClassifier
-sklearn.metrics import accuracy_score, classification_report

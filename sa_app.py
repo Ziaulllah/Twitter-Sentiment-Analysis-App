@@ -21,20 +21,6 @@ st.set_page_config(
 )
 
 
-# Download and Initialize Sentiment Analyzer
-nltk.download("vader_lexicon")
-sia = SentimentIntensityAnalyzer()
-
-def analyze_sentiment(text):
-    """Analyze sentiment using NLTK Sentiment Analyzer."""
-    score = sia.polarity_scores(text)
-    if score['compound'] >= 0.05:
-        return "Positive"
-    elif score['compound'] <= -0.05:
-        return "Negative"
-    else:
-        return "Neutral"
-
 # Sidebar Menu
 with st.sidebar:
     st.markdown("""
@@ -122,7 +108,7 @@ def Home():
             /* Title Styling */
             .title {
                 text-align: left;
-                font-size: 40px;
+                font-size: 48px;
                 font-weight: bold;
                 margin-left: 20px;
                 padding-top: 10px;

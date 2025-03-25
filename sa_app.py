@@ -117,7 +117,7 @@ def Home():
         </style>
 
         <!-- Title (Color Will Change Dynamically) -->
-        <h1 id="dynamic-title" class="title">Twitter Sentiment Analysis</h1>
+        <h1 id="dynamic-title" class="title">TweetMood Analyzer</h1>
 
         <script>
             function updateTitleColor() {
